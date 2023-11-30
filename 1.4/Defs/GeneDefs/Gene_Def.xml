@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>DV_Compound_Eyes</defName>
+    <label>compound eyes</label>
+    <labelShortAdj>bug-eyed</labelShortAdj>
+    <description>Carriers of this gene have deeply red-pigmented eyes.</description>
+
+    <iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <biostatCpx>0</biostatCpx>
+    <biostatMet>-1</biostatMet>
+
+    <statFactors>
+      <ShootingAccuracyFactor_Long>1.15</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>1.10</ShootingAccuracyFactor_Medium>
+    </statFactors>
+    <capMods>
+      <li>
+        <capacity>Sight</capacity>
+        <postFactor>1.1</postFactor>
+      </li>
+    </capMods>
+
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/CompoundEyes/CompoundEyes</graphicPath>
+      <color>(255, 255, 255)</color>
+      <visibleNorth>false</visibleNorth>
+      <layer>PostTattoo</layer>
+    </graphicData>
+
+    <exclusionTags>
+      <li>EyeColor</li>
+    </exclusionTags>
+
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Mandibles</defName>
+    <label>mandibles</label>
+    <labelShortAdj>mandibled</labelShortAdj>
+    <description>Carriers of this gene have deeply red-pigmented eyes.</description>
+
+    <iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <biostatCpx>0</biostatCpx>
+
+    <graphicData>
+      <graphicPath>Things/Pawn/Humanlike/HeadAttachments/Mandibles/Mandibles</graphicPath>
+      <colorType>Skin</colorType>
+      <colorRGBPostFactor>1</colorRGBPostFactor>
+      <visibleNorth>false</visibleNorth>
+      <layer>PostTattoo</layer>
+    </graphicData>
+
+  </GeneDef>
+
+</Defs>

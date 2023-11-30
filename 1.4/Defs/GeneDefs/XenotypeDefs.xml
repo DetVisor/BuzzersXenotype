@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<XenotypeDef>
+  <defName>DV_Buzzer</defName>
+  <label>buzzer</label>
+  <description>Test</description>
+  <descriptionShort></descriptionShort>
+  <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon6</iconPath>
+  <inheritable>false</inheritable>
+  <genes>
+    <li>Immunity_Strong</li>
+    <li>MoveSpeed_Quick</li>
+	  <li>DV_Mandibles</li>
+	  <li>DV_Compound_Eyes</li>
+	  <li>Head_Gaunt</li>
+    <li>MaxTemp_SmallIncrease</li>
+    <li>ToxicEnvironmentResistance_Partial</li>
+    <li>FireWeakness</li>
+    <li>Pain_Reduced</li>
+    <li>Libido_High</li>
+    <li>Beauty_VeryUgly</li>
+    <li>Beard_NoBeardOnly</li>
+    <li>Hair_ShortOnly</li>
+    <li>StrongStomach</li>
+    <li>Learning_Slow</li>
+    <li>DarkVision</li>
+    <li>AptitudePoor_Mining</li>
+    <li>AptitudePoor_Cooking</li>
+    <li>AptitudeTerrible_Social</li>
+	  <li>Skin_SlateGray</li>
+	 <li>Skin_LightGray</li>
+  </genes>
+</XenotypeDef>
+
+</Defs>
