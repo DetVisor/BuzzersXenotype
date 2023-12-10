@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "GKKV8LI2ilcATvXQ+ChPCxf2Vs8z09GzGPFoRBfmJ/3iSYpZog5A0u3y9LhZiHVEiyWZpvaNGtXFiiKS/VFmQQ==",
+  "success": true,
+  "projectFilePath": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\RimWorld\\Mods\\BuzzersXenotype\\Source\\BuzzersXenotype\\BuzzersXenotype.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Artemy\\.nuget\\packages\\krafs.publicizer\\2.2.1\\krafs.publicizer.2.2.1.nupkg.sha512",
+    "C:\\Users\\Artemy\\.nuget\\packages\\krafs.rimworld.ref\\1.4.3901\\krafs.rimworld.ref.1.4.3901.nupkg.sha512",
+    "C:\\Users\\Artemy\\.nuget\\packages\\lib.harmony\\2.2.2\\lib.harmony.2.2.2.nupkg.sha512"
+  ],
+  "logs": []
+}
