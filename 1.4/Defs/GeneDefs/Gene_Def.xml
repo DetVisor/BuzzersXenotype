@@ -5,11 +5,12 @@
     <defName>DV_Compound_Eyes</defName>
     <label>compound eyes</label>
     <labelShortAdj>bug-eyed</labelShortAdj>
-    <description>Carriers of this gene have deeply red-pigmented eyes.</description>
+    <description>Carriers of this have bulbous, mutated compound eyes that wrap around their head.</description>
 
-    <iconPath>UI/Icons/Genes/Gene_RedEyes</iconPath>
+    <iconPath>UI/Genes/CompoundEyes</iconPath>
     <displayOrderInCategory>0</displayOrderInCategory>
     <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <biostatCpx>0</biostatCpx>
     <biostatMet>-1</biostatMet>
 
@@ -29,6 +30,7 @@
       <color>(255, 255, 255)</color>
       <visibleNorth>false</visibleNorth>
       <layer>PostTattoo</layer>
+      <drawOffset>(0, -0.002, 0)</drawOffset>
     </graphicData>
 
     <exclusionTags>
