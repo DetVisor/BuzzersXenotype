@@ -41,7 +41,7 @@
 
   <GeneDef>
     <defName>DV_Mandibles</defName>
-    <label>mandibles</label>
+    <label>uneven mandibles</label>
     <labelShortAdj>mandibled</labelShortAdj>
     <description>Carriers of this gene have deeply red-pigmented eyes.</description>
 
@@ -57,7 +57,39 @@
       <visibleNorth>false</visibleNorth>
       <layer>PostTattoo</layer>
     </graphicData>
+  </GeneDef>
 
+  <GeneDef>
+    <defName>DV_Wastefeaster</defName>
+    <label>wastefeaster</label>
+    <description>Carriers of this gene have small retractable fangs and an organ on the roof of the mouth which can extract hemogen from fresh warm blood. They can bite an unresisting person, suck the blood, and gain hemogen directly.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <geneClass>Gene</geneClass>
+    <displayCategory>Hemogen</displayCategory>
+    <abilities>
+      <li>DV_Wastefeast</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>DV_Wastefeast</AbilityDef>
+    </descriptionHyperlinks>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>wasterfeaster</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>trash</symbol></li>
+        <li><symbol>tox</symbol></li>
+        <li><symbol>waste</symbol></li>
+        <li><symbol>detritus</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>feeder</symbol></li>
+        <li><symbol>eater</symbol></li>
+        <li><symbol>gorger</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
   </GeneDef>
 
 </Defs>

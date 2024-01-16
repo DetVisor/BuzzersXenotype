@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<AbilityDef ParentName="AbilityTouchBase">
+    <defName>DV_Wastefeast</defName>
+    <label>wastefeast</label>
+    <description>Bite the target and extract hemogen directly from their blood. The target will lose blood and will be horrified by the interaction, but will be otherwise unharmed. A fast-acting coagulant will seal the wound to prevent bleeding.\n\nCan only target non-hemogenic humans. Hemogen gain is affected by the target's body size.</description>
+    <iconPath>UI/Icons/Genes/Gene_Bloodfeeder</iconPath>
+    <displayOrder>100</displayOrder>
+    <hostile>false</hostile>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2</warmupTime>
+      <targetParams>
+        <canTargetItems>true</canTargetItems>
+        <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+        <thingCategory>Item</thingCategory>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="BuzzersXenotype.CompProperties_AbilityToxfeast">
+        <maxAmount>5</maxAmount>
+        <hungerRestore>0.05</hungerRestore>
+        <effecter>Bloodfeed_Warmup</effecter>
+        <hediff>ToxicBuildup</hediff>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>
