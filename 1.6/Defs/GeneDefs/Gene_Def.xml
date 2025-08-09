@@ -108,6 +108,7 @@
     <displayCategory>Cosmetic</displayCategory>
     <iconColor>(0.75, 0.75, 0.75)</iconColor>
     <biostatMet>0</biostatMet>
+    <biostatCpx>0</biostatCpx>
     <renderNodeProperties>
       <li>
         <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>

@@ -55,7 +55,7 @@
         <casterNeedOffsets>
           <li>
             <need>Food</need>
-            <offset>0.4</offset>
+            <offset>0.25</offset>
           </li>
         </casterNeedOffsets>
       </li>
