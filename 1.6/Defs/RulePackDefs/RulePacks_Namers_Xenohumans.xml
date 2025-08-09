@@ -69,6 +69,8 @@
         <li>nicknameBuzzer->insect</li>
         <li>nicknameBuzzer->worm</li>
         <li>nicknameBuzzer->fly</li>
+        <li>nicknameBuzzer->prawn</li>
+        <li>nicknameBuzzer->wikus</li>
         
       </rulesStrings>
       <rulesFiles>
