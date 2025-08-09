@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityDef ParentName="AbilityTouchBase">
+    <defName>DV_Wastefeast</defName>
+    <label>wastefeast</label>
+    <description>Swallow a full pile of toxic wastepacks. This can be done up to 3 times before toxic material builds up too much in the bloodstream, downing the pawn.\n\nCan only target full stacks of toxic wastepacks.</description>
+    <iconPath>UI/Genes/Gene_Wastefeaster</iconPath>
+    <charges>3</charges>
+    <cooldownTicksRange>180000</cooldownTicksRange>
+    <sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+    <displayOrder>100</displayOrder>
+    <warmupEffecter>DV_Wasterfeaster_Warmup</warmupEffecter>
+    <warmupStartSound>Bloodfeed_Cast</warmupStartSound>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>false</disableGizmoWhileUndrafted>
+    <showCastingProgressBar>true</showCastingProgressBar>
+    <verbProperties>
+      <verbClass>Verb_CastAbilityTouch</verbClass>
+      <drawAimPie>false</drawAimPie>
+      <range>-1</range>
+      <warmupTime>2.5</warmupTime>
+      <targetParams>
+        <canTargetItems>true</canTargetItems>
+        <mapObjectTargetsMustBeAutoAttackable>false</mapObjectTargetsMustBeAutoAttackable>
+        <thingCategory>Item</thingCategory>
+        <canTargetLocations>false</canTargetLocations>
+        <canTargetPawns>false</canTargetPawns>
+        <canTargetBuildings>false</canTargetBuildings>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="EBSGFramework.CompProperties_AbilityDestroyItem">
+        <options>
+          <li>
+            <Wastepack>5</Wastepack>
+          </li>
+        </options>
+      </li>
+      <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs">
+        <hediffsToGive>
+          <li>
+            <hediffDef>ToxicBuildup</hediffDef>
+            <onlyApplyToSelf>true</onlyApplyToSelf>
+            <severity>0.11</severity>
+          </li>
+        </hediffsToGive>
+      </li>
+      <li Class="CompProperties_AbilityRequiresCapacity">
+        <capacity>Eating</capacity>
+      </li>
+      <li Class="EBSGFramework.CompProperties_AbilityOffsetNeed">
+        <casterNeedOffsets>
+          <li>
+            <need>Food</need>
+            <offset>0.4</offset>
+          </li>
+        </casterNeedOffsets>
+      </li>
+    </comps>
+  </AbilityDef>
+
+</Defs>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef ParentName="DrifterBase">
+        <defName>DV_Test_Buzzer</defName>
+        <apparelMoney>0</apparelMoney>
+        <apparelTags Inherit="False" />
+        <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+        <defaultFactionDef>PirateWaster</defaultFactionDef>
+        <xenotypeSet>
+            <xenotypeChances>
+                <DV_Buzzer>999</DV_Buzzer>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+    </PawnKindDef>
+
+</Defs>

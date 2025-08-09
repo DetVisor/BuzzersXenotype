@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RulePackDef>
+    <defName>DV_NamerPersonBuzzer</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=3)->[firstName] '[nicknameBuzzer]' [lastName]</li>
+        <li>r_name->[firstName] [lastName]</li>
+
+        <li>firstName->[Syl][Syl]</li>
+        <li>firstName->[Syl]</li>
+
+        <li>lastName->[Syl][End]</li>
+
+        <li>End->ad</li>
+        <li>End->ak</li>
+        <li>End->ank</li>
+        <li>End->ash</li>
+        <li>End->eek</li>
+        <li>End->ek</li>
+        <li>End->enk</li>
+        <li>End->er</li>
+        <li>End->esk</li>
+        <li>End->ez</li>
+        <li>End->pince</li>
+        <li>End->ik</li>
+        <li>End->ip</li>
+        <li>End->isk</li>
+        <li>End->ix</li>
+        <li>End->iz</li>
+        <li>End->click</li>
+        <li>End->kin</li>
+        <li>End->ling</li>
+        <li>End->man</li>
+        <li>End->men</li>
+        <li>End->nik</li>
+        <li>End->ox</li>
+        <li>End->skow</li>
+        <li>End->bug</li>
+        <li>End->fly</li>
+        <li>End->y</li>
+
+        <li>nicknameBuzzer->buzz</li>
+        <li>nicknameBuzzer->bizz</li>
+        <li>nicknameBuzzer->skit</li>
+        <li>nicknameBuzzer->skitt</li>
+        <li>nicknameBuzzer->chitt</li>
+        <li>nicknameBuzzer->chitter</li>
+        <li>nicknameBuzzer->skitter</li>
+        <li>nicknameBuzzer->click</li>
+        <li>nicknameBuzzer->clik</li>
+        <li>nicknameBuzzer->clak</li>
+        <li>nicknameBuzzer->clack</li>
+        <li>nicknameBuzzer->klick</li>
+        <li>nicknameBuzzer->klik</li>
+        <li>nicknameBuzzer->klak</li>
+        <li>nicknameBuzzer->klack</li>
+        <li>nicknameBuzzer->pince</li>
+        <li>nicknameBuzzer->pincer</li>
+        <li>nicknameBuzzer->grub</li>
+        <li>nicknameBuzzer->larva</li>
+        <li>nicknameBuzzer->maggot</li>
+        <li>nicknameBuzzer->web</li>
+        <li>nicknameBuzzer->ant</li>
+        <li>nicknameBuzzer->buggy</li>
+        <li>nicknameBuzzer->bugs</li>
+        <li>nicknameBuzzer->bug</li>
+        <li>nicknameBuzzer->insect</li>
+        <li>nicknameBuzzer->worm</li>
+        <li>nicknameBuzzer->fly</li>
+        
+      </rulesStrings>
+      <rulesFiles>
+        <li>Syl->WordParts/Syllables_Waster</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef ParentName="GeneEyeColor">
+    <defName>DV_Eyes_Compound</defName>
+    <label>compound eyes</label>
+    <labelShortAdj>bug-eyed</labelShortAdj>
+    <description>Carriers of this have bulbous, mutated compound eyes that wrap around their head.</description>
+    <iconPath>UI/Genes/Gene_CompoundEyes</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+    <statFactors>
+      <ShootingAccuracyFactor_Long>1.15</ShootingAccuracyFactor_Long>
+      <ShootingAccuracyFactor_Medium>1.10</ShootingAccuracyFactor_Medium>
+    </statFactors>
+    <capMods>
+      <li>
+        <capacity>Sight</capacity>
+        <postFactor>1.1</postFactor>
+      </li>
+    </capMods>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/CompoundEyes/CompoundEyes</texPath>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>South</li>
+          <li>East</li>
+          <li>West</li>
+          <li>North</li>
+        </visibleFacing>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>58</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>-3</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ExtendedHeadTop/ExtendedHeadTop</texPath>
+        <colorType>Skin</colorType>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>South</li>
+        </visibleFacing>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>57</layer>
+          </defaultData>
+        </drawData>
+      </li>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Humanlike/HeadAttachments/ExtendedHeadBottom/ExtendedHeadBottom</texPath>
+        <colorType>Skin</colorType>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <visibleFacing>
+          <li>South</li>
+        </visibleFacing>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>-3</layer>
+          </defaultData>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Pheromones</defName>
+    <label>pherotypical attraction</label>
+    <description>Carriers of this gene emit foul-smelling pheromones that others carrying the same gene are drawn to, while those without the gene dislike.</description>
+    <iconPath>UI/Genes/Gene_PheromoneAttraction</iconPath>
+    <missingGeneRomanceChanceFactor>0.2</missingGeneRomanceChanceFactor>
+    <displayCategory>Miscellaneous</displayCategory>
+    <displayOrderInCategory>410</displayOrderInCategory>
+    <biostatMet>+1</biostatMet>
+    <customEffectDescriptions>
+      <li>Adds a positive thought to pawns with the same gene, and a negative thought to pawns without it.</li>
+    </customEffectDescriptions>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Antennae</defName>
+    <label>antennae</label>
+    <labelShortAdj>wirehead</labelShortAdj>
+    <description>Carriers of this gene grow spindly, jointed antennae from the top of their head.</description>
+    <iconPath>UI/Genes/Gene_Antennae</iconPath>
+    <displayOrderInCategory>0</displayOrderInCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <iconColor>(0.75, 0.75, 0.75)</iconColor>
+    <biostatMet>0</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <parentTagDef>Head</parentTagDef>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Antennae/Antennae1</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Antennae/Antennae2</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/Antennae/Antennae3</li>
+        </texPaths>
+        <colorType>Skin</colorType>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>60</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>76</layer>
+          </dataSouth>
+          <dataEast>
+            <layer>76</layer>
+          </dataEast>
+          <dataWest>
+            <layer>76</layer>
+          </dataWest>
+          <dataNorth>
+            <layer>5</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneJawBase">
+    <defName>DV_Jaw_UnevenMandibles</defName>
+    <label>uneven mandibles</label>
+    <description>Carriers of this gene grow uneven, asymmetrical extensions from their jaw, that can move and close like pincers.</description>
+    <iconPath>UI/Genes/Gene_UnevenMandibles</iconPath>
+    <exclusionTags Inherit="false" />
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPaths>
+          <li>Things/Pawn/Humanlike/HeadAttachments/UnevenMandibles/UnevenMandibles1</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/UnevenMandibles/UnevenMandibles2</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/UnevenMandibles/UnevenMandibles3</li>
+          <li>Things/Pawn/Humanlike/HeadAttachments/UnevenMandibles/UnevenMandibles4</li>
+        </texPaths>
+        <colorType>Skin</colorType>
+        <useSkinShader>true</useSkinShader>
+        <useRottenColor>true</useRottenColor>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <parentTagDef>Head</parentTagDef>
+        <drawData>
+          <defaultData>
+            <layer>59</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>5</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DV_Wastefeaster</defName>
+    <label>wastefeaster</label>
+    <description>Carriers of this gene have a specialized, adapted stomach with a noxious cocktail of acids that can digest even toxic materials like wastepacks.</description>
+    <iconPath>UI/Genes/Gene_Wastefeaster</iconPath>
+    <geneClass>Gene</geneClass>
+    <abilities>
+      <li>DV_Wastefeast</li>
+    </abilities>
+    <descriptionHyperlinks>
+      <AbilityDef>DV_Wastefeast</AbilityDef>
+    </descriptionHyperlinks>
+    <customEffectDescriptions>
+      <li>Gives the ability to devour up to 3 stacks of wastepacks, before falling to toxic buildup.</li>
+    </customEffectDescriptions>
+    <biostatMet>-1</biostatMet>
+    <minAgeActive>3</minAgeActive>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li>
+          <symbol>wasterfeaster</symbol>
+        </li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li>
+          <symbol>trash</symbol>
+        </li>
+        <li>
+          <symbol>tox</symbol>
+        </li>
+        <li>
+          <symbol>waste</symbol>
+        </li>
+        <li>
+          <symbol>detritus</symbol>
+        </li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li>
+          <symbol>feeder</symbol>
+        </li>
+        <li>
+          <symbol>eater</symbol>
+        </li>
+        <li>
+          <symbol>gorger</symbol>
+        </li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DV_Skin_DirtyRed</defName>
+    <label>dirty red skin</label>
+    <labelShortAdj>red</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a dirty, dark red color.</description>
+    <skinColorOverride>(97, 86, 83)</skinColorOverride>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>red</symbol>
+        </li>
+        <li>
+          <symbol>dirty</symbol>
+        </li>
+        <li>
+          <symbol>mud</symbol>
+        </li>
+        <li>
+          <symbol>dirt</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DV_Skin_DirtyGreen</defName>
+    <label>dirty green skin</label>
+    <labelShortAdj>green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a dirty, dark green color.</description>
+    <skinColorOverride>(88, 97, 83)</skinColorOverride>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>green</symbol>
+        </li>
+        <li>
+          <symbol>dirty</symbol>
+        </li>
+        <li>
+          <symbol>mud</symbol>
+        </li>
+        <li>
+          <symbol>dirt</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DV_Skin_DirtyBlue</defName>
+    <label>dirty blue skin</label>
+    <labelShortAdj>blue</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a dirty, dark blue color.</description>
+    <skinColorOverride>(83, 91, 97)</skinColorOverride>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>blue</symbol>
+        </li>
+        <li>
+          <symbol>dirty</symbol>
+        </li>
+        <li>
+          <symbol>mud</symbol>
+        </li>
+        <li>
+          <symbol>dirt</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DV_Skin_WashedOutGreen</defName>
+    <label>washed-out green skin</label>
+    <labelShortAdj>green</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a washed-out green color.</description>
+    <skinColorOverride>(117, 125, 113)</skinColorOverride>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>green</symbol>
+        </li>
+        <li>
+          <symbol>dry</symbol>
+        </li>
+        <li>
+          <symbol>dust</symbol>
+        </li>
+        <li>
+          <symbol>fog</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneSkinColorOverride">
+    <defName>DV_Skin_WashedOutRed</defName>
+    <label>washed-out red skin</label>
+    <labelShortAdj>red</labelShortAdj>
+    <description>Carriers of this gene produce a pigment that turns their skin a washed-out red color.</description>
+    <skinColorOverride>(125, 116, 113)</skinColorOverride>
+    <displayOrderInCategory>97</displayOrderInCategory>
+    <symbolPack>
+      <prefixSymbols>
+        <li>
+          <symbol>red</symbol>
+        </li>
+        <li>
+          <symbol>dry</symbol>
+        </li>
+        <li>
+          <symbol>dust</symbol>
+        </li>
+        <li>
+          <symbol>fog</symbol>
+        </li>
+      </prefixSymbols>
+    </symbolPack>
+  </GeneDef>
+
+</Defs>

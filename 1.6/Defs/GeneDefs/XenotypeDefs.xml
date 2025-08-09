@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>DV_Buzzer</defName>
+    <label>buzzer</label>
+    <description>Birthed in the least ethical urbworld laboratories as the end-all solution to the trash problem, buzzers are abhorrent xenohumans spliced with an immeasurable number of different arthropods. They are gifted with the ability to thrive in polluted areas, and their robust digestive system allows them to consume toxic substances, albeit over a long period. They have large, lumpy compound eyes, spindly antennae atop their head, and asymmetrical mandibles that extend out from their jaw. Unfortunately, their rather haphazard creation process left them rife with biological issues, as they are prone to developing cancer and have thin, dry skin that is easy to catch alight. On top of their natural repulsiveness, buzzers secrete foul pheromones that only other buzzers seem to enjoy.\n\nCreated out of necessity by desperate scientists, buzzers were assembled from scraps of genetic material and spliced insect DNA. They were then abandoned in the deepest depths of urbworld cities to slowly devour the trash of upper-class citizens. The unfortunate volunteers lived in almost complete darkness until news of the project surfaced, with the ensuing protests and riots resulting in their liberation and eventual proliferation through the rim.</description>
+    <descriptionShort>Birthed in the least ethical urbworld laboratories as the end-all solution to the trash problem, buzzers are abhorrent xenohumans spliced with an immeasurable number of different arthropods. They are gifted with the ability to thrive in polluted areas, and their robust digestive system allows them to consume toxic substances, albeit over a long period. They have large, lumpy compound eyes, spindly antennae atop their head, and asymmetrical mandibles that extend out from their jaw. Unfortunately, their rather haphazard creation process left them rife with biological issues, as they are prone to developing cancer and have thin, dry skin that is easy to catch alight. On top of their natural repulsiveness, buzzers secrete foul pheromones that only other buzzers seem to enjoy.</descriptionShort>
+    <iconPath>UI/Xenotypes/Buzzer</iconPath>
+    <inheritable>true</inheritable>
+    <nameMaker>DV_NamerPersonBuzzer</nameMaker>
+    <chanceToUseNameMaker>1</chanceToUseNameMaker>
+    <genes>
+      <li>Libido_High</li>
+      <li>AcidSpray</li>
+      <li>MoveSpeed_Quick</li>
+      <li>DV_Jaw_UnevenMandibles</li>
+      <li>DV_Eyes_Compound</li>
+      <li>Head_Gaunt</li>
+      <li>DV_Antennae</li>
+      <li>DV_Pheromones</li>
+      <li>MaxTemp_SmallIncrease</li>
+      <li>ToxicEnvironmentResistance_Total</li>
+      <li>FireWeakness</li>
+      <li>PollutionRush</li>
+      <li>Body_Thin</li>
+      <li>DV_Wastefeaster</li>
+      <li>Beauty_Ugly</li>
+      <li>Beard_NoBeardOnly</li>
+      <li>Hair_BaldOnly</li>
+      <li>StrongStomach</li>
+      <li>Instability_Major</li>
+      <li>DarkVision</li>
+      <li>AptitudePoor_Cooking</li>
+      <li>AptitudeTerrible_Social</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>Skin_SlateGray</li>
+      <li>DV_Skin_DirtyGreen</li>
+      <li>DV_Skin_DirtyRed</li>
+      <li>DV_Skin_DirtyBlue</li>
+      <li>DV_Skin_WashedOutRed</li>
+      <li>DV_Skin_WashedOutGreen</li>
+    </genes>
+  </XenotypeDef>
+
+</Defs>

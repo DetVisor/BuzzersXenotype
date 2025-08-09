@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThoughtDef>
+        <defName>DV_AttractedToPheromones</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_Gene_GeneSocial</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>tuned pheromones</label>
+                <baseOpinionOffset>30</baseOpinionOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGThoughtExtension">
+                <relatedGenes>
+                    <li>DV_Pheromones</li>
+                </relatedGenes>
+                <requiredGenes>
+                    <li>DV_Pheromones</li>
+                </requiredGenes>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+
+    <ThoughtDef>
+        <defName>DV_UnattractedToPheromones</defName>
+        <thoughtClass>Thought_SituationalSocial</thoughtClass>
+        <workerClass>EBSGFramework.ThoughtWorker_Gene_GeneSocial</workerClass>
+        <validWhileDespawned>true</validWhileDespawned>
+        <developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+        <stages>
+            <li>
+                <label>Stinks</label>
+                <baseOpinionOffset>-15</baseOpinionOffset>
+            </li>
+        </stages>
+        <modExtensions>
+            <li Class="EBSGFramework.EBSGThoughtExtension">
+                <relatedGenes>
+                    <li>DV_Pheromones</li>
+                </relatedGenes>
+                <nullifyingGenes>
+                    <li>DV_Pheromones</li>
+                </nullifyingGenes>
+            </li>
+        </modExtensions>
+    </ThoughtDef>
+</Defs>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef ParentName="MakeableDrugPillBase">
+        <defName>DV_LungPurifier</defName>
+        <label>lung purifier</label>
+        <description>A fast-acting purifying agent absorbed directly through the lungs. Clears a small level of toxic buildup.</description>
+        <possessionCount>3</possessionCount>
+        <techLevel>Industrial</techLevel>
+        <stackLimit>8</stackLimit>
+        <descriptionHyperlinks>
+            <HediffDef>ToxicBuildup</HediffDef>
+        </descriptionHyperlinks>
+        <graphicData>
+            <texPath>Things/Item/Drug/LungPurifier</texPath>
+            <graphicClass>Graphic_StackCount</graphicClass>
+            <drawSize>0.75</drawSize>
+        </graphicData>
+        <socialPropernessMatters>false</socialPropernessMatters>
+        <rotatable>false</rotatable>
+        <statBases>
+            <WorkToMake>800</WorkToMake>
+            <MarketValue>11</MarketValue>
+            <Mass>0.22</Mass>
+            <Flammability>0.5</Flammability>
+        </statBases>
+        <ingestible>
+            <drugCategory>Medical</drugCategory>
+            <foodType>Processed</foodType>
+            <ingestSound>Ingest_Snort</ingestSound>
+            <ingestCommandString>Inhale {0}</ingestCommandString>
+            <ingestReportString>Inhaling {0}.</ingestReportString>
+            <outcomeDoers>
+                <li Class="EBSGFramework.IngestionOutcomeDoer_AddOrAppendHediff">
+                    <hediffDef>ToxicBuildup</hediffDef>
+                    <severityChange>-0.14</severityChange>
+                </li>
+            </outcomeDoers>
+        </ingestible>
+        <costList>
+            <Neutroamine>1</Neutroamine>
+            <MedicineHerbal>1</MedicineHerbal>
+            <Steel>4</Steel>
+        </costList>
+        <recipeMaker>
+            <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+            <workSkill>Intellectual</workSkill>
+            <recipeUsers>
+                <li>DrugLab</li>
+            </recipeUsers>
+            <researchPrerequisite>MedicineProduction</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>6</Crafting>
+                <Intellectual>4</Intellectual>
+            </skillRequirements>
+            <bulkRecipeCount>4</bulkRecipeCount>
+            <displayPriority>2100</displayPriority>
+        </recipeMaker>
+        <comps>
+            <li Class="CompProperties_Drug">
+                <listOrder>1000</listOrder>
+                <overdoseSeverityOffset>0.08~0.14</overdoseSeverityOffset>
+            </li>
+        </comps>
+    </ThingDef>
+</Defs>

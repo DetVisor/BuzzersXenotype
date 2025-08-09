@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <FleckDef ParentName="FleckBase_Thrown">
+        <defName>DV_WasteSplash</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <solidTime>0.15</solidTime>
+        <fadeOutTime>0.15</fadeOutTime>
+        <graphicData>
+            <texPath>Things/Mote/TrashSplash</texPath>
+            <shaderType>Mote</shaderType>
+        </graphicData>
+    </FleckDef>
+</Defs> 
