@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+  <BuzzerFactionGreetingHostile>You hear {0} audibly clamp on the microphone with {0_possessive} mandibles before ripping it and disconnecting.</BuzzerFactionGreetingHostile>
+  <BuzzerFactionGreetingHostileAppreciative>Hissing and clicking {0_possessive} mandibles,  {0} demands that you make a gesture of unity, like bringing gifts to one of {0_possessive} colonies or releasing {0_possessive} swarm's prisoners unharmed. Until then, {0_pronoun} is unwilling to discuss anything.\n\nGrowling into the microphone, {0_pronoun} disconnects.</BuzzerFactionGreetingHostileAppreciative>
+  <BuzzerFactionGreetingWary>{0} happily chitters and asks what help you need.</BuzzerFactionGreetingWary>
+  <BuzzerFactionGreetingWarm>Chittering and hissing with joy, {0} greets {NEGOTIATOR_labelShort}, while audibly munching on some food, and asks what service {LEADER_pronoun} can provide.</BuzzerFactionGreetingWarm>
+  <BuzzerMilitaryAidSent>{0} clacks {0_possessive} mandibles before agreeing to send a group to help.</BuzzerMilitaryAidSent>
+
+</LanguageData>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <FactionDef ParentName="OutlanderRoughBase">
+        <defName>DV_OutlanderRoughBuzzer</defName>
+        <label>rough buzzer swarm</label>
+        <description>A tight-knit coalition of various buzzer colonies. They're willing to trade goods, but are very weary of outsiders and baseliners, and aren't afraid to use their weapons and numbers. Treat them with respect and they'll send a swarm to help. Fight against them, and you might just be thrown in along with their trash piles.</description>
+        <factionIconPath>World/WorldObjects/Expanding/BuzzerOutlanders</factionIconPath>
+        <factionNameMaker>DV_NamerFactionOutlanderBuzzer</factionNameMaker>
+        <settlementNameMaker>DV_NamerSettlementOutlanderBuzzer</settlementNameMaker>
+        <pawnSingular>buzzer</pawnSingular>
+        <pawnsPlural>buzzers</pawnsPlural>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <DV_Buzzer>999</DV_Buzzer>
+            </xenotypeChances>
+        </xenotypeSet>
+        <dialogFactionGreetingHostile>BuzzerFactionGreetingHostile</dialogFactionGreetingHostile>
+        <dialogFactionGreetingHostileAppreciative>BuzzerFactionGreetingHostileAppreciative</dialogFactionGreetingHostileAppreciative>
+        <dialogFactionGreetingWary>BuzzerFactionGreetingWary</dialogFactionGreetingWary>
+        <dialogFactionGreetingWarm>BuzzerFactionGreetingWarm</dialogFactionGreetingWarm>
+        <dialogMilitaryAidSent>BuzzerMilitaryAidSent</dialogMilitaryAidSent>
+        <pawnGroupMakers Inherit="False">
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <DV_Villager_Buzzer>5</DV_Villager_Buzzer>
+                    <DV_Swarm_Guard_Buzzer>10</DV_Swarm_Guard_Buzzer>
+                    <Grenadier_Destructive>10</Grenadier_Destructive>
+                    <Mercenary_Slasher>10</Mercenary_Slasher>
+                    <DV_Mercenary_Gunner_Buzzer>7</DV_Mercenary_Gunner_Buzzer>
+                    <DV_Mercenary_Elite_Buzzer>10</DV_Mercenary_Elite_Buzzer>
+                    <DV_Swarm_Councilman_Buzzer>10</DV_Swarm_Councilman_Buzzer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Combat</kindDef>
+                <options>
+                    <DV_Swarm_Guard_Buzzer>10</DV_Swarm_Guard_Buzzer>
+                    <Grenadier_Destructive>10</Grenadier_Destructive>
+                    <DV_Mercenary_Heavy_Buzzer>10</DV_Mercenary_Heavy_Buzzer>
+                    <DV_Mercenary_Gunner_Buzzer>7</DV_Mercenary_Gunner_Buzzer>
+                    <DV_Mercenary_Elite_Buzzer>10</DV_Mercenary_Elite_Buzzer>
+                    <DV_Swarm_Councilman_Buzzer>10</DV_Swarm_Councilman_Buzzer>
+                    <DV_Mercenary_Sniper_Buzzer>5</DV_Mercenary_Sniper_Buzzer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Peaceful</kindDef>
+                <options>
+                    <DV_Villager_Buzzer>20</DV_Villager_Buzzer>
+                    <DV_Villager_Child_Buzzer>10</DV_Villager_Child_Buzzer>
+                    <DV_Swarm_Guard_Buzzer>10</DV_Swarm_Guard_Buzzer>
+                    <DV_Swarm_Councilman_Buzzer>10</DV_Swarm_Councilman_Buzzer>
+                </options>
+            </li>
+            <li>
+                <kindDef>Trader</kindDef>
+                <traders>
+                    <DV_Swarm_Trader_Buzzer>1</DV_Swarm_Trader_Buzzer>
+                </traders>
+                <carriers>
+                    <Muffalo>6</Muffalo>
+                    <Dromedary>5</Dromedary>
+                    <Alpaca>2</Alpaca>
+                    <Elephant>1</Elephant>
+                </carriers>
+                <guards>
+                    <DV_Villager_Buzzer>3</DV_Villager_Buzzer>
+                    <DV_Swarm_Guard_Buzzer>10</DV_Swarm_Guard_Buzzer>
+                    <Grenadier_Destructive>10</Grenadier_Destructive>
+                    <Mercenary_Slasher>10</Mercenary_Slasher>
+                    <DV_Mercenary_Gunner_Buzzer>7</DV_Mercenary_Gunner_Buzzer>
+                    <DV_Mercenary_Elite_Buzzer>10</DV_Mercenary_Elite_Buzzer>
+                </guards>
+            </li>
+            <li>
+                <kindDef>Settlement</kindDef>
+                <options>
+                    <DV_Villager_Buzzer>10</DV_Villager_Buzzer>
+                    <DV_Swarm_Guard_Buzzer>10</DV_Swarm_Guard_Buzzer>
+                    <Grenadier_Destructive>10</Grenadier_Destructive>
+                    <Mercenary_Slasher>10</Mercenary_Slasher>
+                    <DV_Mercenary_Gunner_Buzzer>7</DV_Mercenary_Gunner_Buzzer>
+                    <DV_Mercenary_Elite_Buzzer>10</DV_Mercenary_Elite_Buzzer>
+                    <DV_Mercenary_Heavy_Buzzer>8</DV_Mercenary_Heavy_Buzzer>
+                    <DV_Mercenary_Sniper_Buzzer>5</DV_Mercenary_Sniper_Buzzer>
+                    <DV_Swarm_Councilman_Buzzer>10</DV_Swarm_Councilman_Buzzer>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Miners</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Miner>1</Miner>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Hunters</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Hunter>1</Hunter>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Loggers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Logger>1</Logger>
+                </options>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Ideology">
+                <kindDef>Farmers</kindDef>
+                <commonality>1</commonality>
+                <options>
+                    <Farmer>1</Farmer>
+                </options>
+            </li>
+        </pawnGroupMakers>
+    </FactionDef>
+
+</Defs>

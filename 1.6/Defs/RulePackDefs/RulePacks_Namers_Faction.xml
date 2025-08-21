@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <!-- Pigskin -->
+
+    <RulePackDef>
+        <defName>DV_NamerFactionOutlanderBuzzer</defName>
+        <include>
+            <li>OutlanderPlaceNameUtility</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=2)->[nameCore]</li>
+                <li>r_name->[nameCore] [buzzer_conglomerate]</li>
+                <li>r_name->[buzzer_conglomerate] of [nameCore]</li>
+
+                <li>maybeApostrophe->''</li>
+                <li>maybeApostrophe(p=3)->'</li>
+
+                <li>nameCore->[SylI][maybeApostrophe][SylI]</li>
+                <li>nameCore->[SylI][maybeApostrophe][SylI][maybeApostrophe][SylI]</li>
+                <li>nameCore->[SylI][maybeApostrophe][end]</li>
+                <li>nameCore->[SylI][maybeApostrophe][SylI][maybeApostrophe][end]</li>
+
+                <li>end->kik</li>
+                <li>end->klik</li>
+                <li>end->clik</li>
+                <li>end->klak</li>
+                <li>end->chit</li>
+                <li>end->crik</li>
+                <li>end->crak</li>
+                <li>end->clak</li>
+                <li>end->chit</li>
+                <li>end->skit</li>
+                <li>end->skrit</li>
+
+                <li>buzzer_conglomerate->swarm</li>
+                <li>buzzer_conglomerate->cluster</li>
+                <li>buzzer_conglomerate->cloud</li>
+                <li>buzzer_conglomerate->intrusion</li>
+                <li>buzzer_conglomerate->hive</li>
+                <li>buzzer_conglomerate->infestation</li>
+
+            </rulesStrings>
+            <rulesFiles>
+                <li>SylI->WordParts/Syllables_Impid</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <RulePackDef>
+        <defName>DV_NamerSettlementOutlanderBuzzer</defName>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name->[townname_wordgen]</li>
+
+                <li>maybeApostrophe->''</li>
+                <li>maybeApostrophe(p=3)->'</li>
+
+                <li>townname_wordgen->[SylI][maybeApostrophe][SylI]</li>
+                <li>townname_wordgen->[SylI][maybeApostrophe][SylI][maybeApostrophe][SylI]</li>
+                <li>townname_wordgen->[SylI][maybeApostrophe][townend]</li>
+                <li>townname_wordgen->[SylI][maybeApostrophe][SylI][maybeApostrophe][townend]</li>
+
+                <li>townend->sik</li>
+                <li>townend->kilk</li>
+                <li>townend->brug</li>
+                <li>townend->drub</li>
+                <li>townend->clak</li>
+                <li>townend->chitt</li>
+                <li>townend->skrat</li>
+                <li>townend->skrit</li>
+                <li>townend->ik</li>
+                <li>townend->ak</li>
+                <li>townend->klakk</li>
+                <li>townend->kick</li>
+                <li>townend->clic</li>
+                <li>townend->fick</li>
+                <li>townend->tick</li>
+                <li>townend->drr</li>
+                <li>townend->frr</li>
+                <li>townend->mrr</li>
+                <li>townend->burm</li>
+                <li>townend->trug</li>
+                <li>townend->ergg</li>
+                <li>townend->bug</li>
+            </rulesStrings>
+            <rulesFiles>
+                <li>SylI->WordParts/Syllables_Impid</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+</Defs>

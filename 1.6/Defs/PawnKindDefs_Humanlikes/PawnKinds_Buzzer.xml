@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="VillagerBase">
+    <defName>DV_Villager_Buzzer</defName>
+    <weaponTags>
+      <li>ShortShots</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Villager_Child">
+    <defName>DV_Villager_Child_Buzzer</defName>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="GuardBase">
+    <defName>DV_Swarm_Guard_Buzzer</defName>
+    <weaponTags>
+      <li>ShortShots</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="CouncilmanBase">
+    <defName>DV_Swarm_Councilman_Buzzer</defName>
+    <weaponTags>
+      <li>ShortShots</li>
+      <li>MedievalMeleeBasic</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="TraderBase">
+    <defName>DV_Swarm_Trader_Buzzer</defName>
+    <weaponTags>
+      <li>Gun</li>
+    </weaponTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <DV_Buzzer>5</DV_Buzzer>
+        <DV_Bogleg MayRequire="det.boglegs">2</DV_Bogleg>
+      </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryGunnerBase">
+    <defName>DV_Mercenary_Gunner_Buzzer</defName>
+    <label>buzzgunner</label>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <weaponTags Inherit="False">
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+    <weaponMoney>500~1500</weaponMoney>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>DV_Mercenary_Elite_Buzzer</defName>
+    <label>flyelite</label>
+    <initialResistanceRange>15~23</initialResistanceRange>
+    <weaponTags Inherit="False">
+      <li>ShortShots</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>AssaultRifle</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+  </PawnKindDef>
+
+
+  <PawnKindDef ParentName="MercenaryGunnerBase">
+    <defName>DV_Mercenary_Heavy_Buzzer</defName>
+    <label>heavy buzzgunner</label>
+    <initialResistanceRange>16~26</initialResistanceRange>
+    <weaponTags Inherit="False">
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+    </weaponTags>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+    <apparelRequired>
+      <li>Apparel_FlakJacket</li>
+      <li>Apparel_SimpleHelmet</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <weaponMoney>500~1500</weaponMoney>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MercenaryEliteBase">
+    <defName>DV_Mercenary_Sniper_Buzzer</defName>
+    <label>compound sniper</label>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <weaponTags Inherit="False">
+      <li>SniperRifle</li>
+    </weaponTags>
+    <xenotypeSet>
+      <xenotypeChances>
+        <DV_Buzzer>5</DV_Buzzer>
+        <DV_Venator MayRequire="det.venators">2</DV_Venator>
+      </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <defaultFactionDef>DV_OutlanderRoughBuzzer</defaultFactionDef>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Duster</li>
+      <li>Apparel_SimpleHelmet</li>
+      <li>Apparel_FlakVest</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <weaponMoney>800~1500</weaponMoney>
+  </PawnKindDef>
+
+</Defs>
